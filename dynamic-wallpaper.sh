@@ -3,8 +3,6 @@
 WALLPAPER_NAME="Big macOS Sur"
 WALLPAPER_DIR="$HOME/Pictures/wallpapers/dynamic-wallpapers/$WALLPAPER_NAME"
 
-# Scan directory and find the total number of frames
-# Supports both .jpg and .png extensions
 get_total_frames() {
     local max=0
     for f in "$WALLPAPER_DIR"/frame-*; do
@@ -16,7 +14,6 @@ get_total_frames() {
     echo "$max"
 }
 
-# Detect extension used by frame files (.jpg or .png)
 get_frame_ext() {
     for ext in jpg png jpeg webp; do
         [[ -f "$WALLPAPER_DIR/frame-1.$ext" ]] && echo "$ext" && return
@@ -49,7 +46,6 @@ set_wallpaper() {
         --transition-fps 60
 }
 
-# Start swww-daemon if not running
 if ! swww query &>/dev/null; then
     echo "[$(date '+%H:%M:%S')] swww-daemon not running, starting..."
     swww-daemon &
@@ -59,7 +55,6 @@ else
     echo "[$(date '+%H:%M:%S')] swww-daemon already running"
 fi
 
-# Validate wallpaper directory
 if [ ! -d "$WALLPAPER_DIR" ]; then
     echo "[$(date '+%H:%M:%S')] ERROR: directory not found: $WALLPAPER_DIR"
     exit 1
@@ -93,7 +88,7 @@ while true; do
         LAST_FRAME=$FRAME
     fi
 
-    SLEEP=$(( 60 - $(date +%S) ))
+    SLEEP=$(( 60 - 10#$(date +%S) ))
     echo "[$(date '+%H:%M:%S')] Sleeping ${SLEEP}s until next check (current frame: $FRAME / $TOTAL_FRAMES)"
     sleep "$SLEEP"
 done
