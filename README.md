@@ -2,9 +2,11 @@
 
 A minimal bash daemon that automatically changes wallpaper based on the time of day. Uses [swww](https://github.com/LGFae/swww) for smooth wallpaper transitions on Wayland.
 <details>
-    <summary>Screenshots</summary>
-    ![Desktop](screenshots/desktop.png)
-    ![Script](screenshots/script.png)
+<summary>Screenshots</summary>
+
+![Desktop](screenshots/desktop.png)
+![Script](screenshots/script.png)
+
 </details>
 
 ## How it works
