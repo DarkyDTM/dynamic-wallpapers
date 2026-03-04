@@ -13,6 +13,12 @@ The day is divided into 16 equal intervals of 90 minutes each. Every interval ma
 22:30 – 24:00  →  frame-16.jpg
 ```
 
+<details>
+    <summary>Screenshots</summary>
+    ![Desktop](screenshots/desktop.png)
+    ![Script](screenshots/script.png)
+</details>
+
 ## Dependencies
 
 - [swww](https://github.com/LGFae/swww) — installed and available in `$PATH`
