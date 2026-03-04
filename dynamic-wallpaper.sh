@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER_DIR="~/Pictures/wallpapers/dynamic-wallpapers"
+WALLPAPERS_DIR="~/Pictures/wallpapers/dynamic-wallpapers"
 
 get_frame() {
     local total_minutes=$(( $(date +%-H) * 60 + $(date +%-M) ))
@@ -10,7 +10,7 @@ get_frame() {
 }
 
 set_wallpaper() {
-    local wallpaper="$WALLPAPER_DIR/frame-${1}.jpg"
+    local wallpaper="$WALLPAPERS_DIR/frame-${1}.jpg"
     [ -f "$wallpaper" ] || return 1
 
     swww img "$wallpaper" \
