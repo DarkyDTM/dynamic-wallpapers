@@ -1,6 +1,6 @@
 # dynamic-wallpaper
 
-A minimal bash daemon that automatically changes wallpapers based on the time of day. Uses [swww](https://github.com/LGFae/swww) for smooth wallpaper transitions on Wayland.
+A minimal bash daemon that automatically changes wallpaper based on the time of day. Uses [swww](https://github.com/LGFae/swww) for smooth wallpaper transitions on Wayland.
 
 ## How it works
 
@@ -18,7 +18,7 @@ The day is divided into 16 equal intervals of 90 minutes each. Every interval ma
 - [swww](https://github.com/LGFae/swww) — installed and available in `$PATH`
 - Wayland-compatible compositor (e.g. Hyprland)
 
-## Wallpaper structure
+## Wallpapers structure
 
 Wallpapers must be placed at:
 
@@ -41,6 +41,7 @@ WALLPAPER_DIR="/your/custom/path"
 ```bash
 cp dynamic-wallpaper.sh ~/.local/share/bin/dynamic-wallpaper.sh
 chmod +x ~/.local/share/bin/dynamic-wallpaper.sh
+cp wallpaper/* ~/Pictures/wallpaper/dynamic-wallpaper
 ```
 
 ## Autostart
