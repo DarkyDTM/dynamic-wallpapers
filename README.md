@@ -27,10 +27,10 @@ With 16 frames:
 22:30 – 24:00  →  frame-16
 ```
 
-The file extension is also detected automatically — `jpg`, `png`, `jpeg`, and `webp` are supported.
+The file extension is also detected automatically - `jpg`, `png`, `jpeg`, and `webp` are supported.
 
 ## Dependencies
-- [swww](https://github.com/LGFae/swww) — installed and available in `$PATH`
+- [swww](https://github.com/LGFae/swww) - installed and available in `$PATH`
 - Wayland-compatible compositor (e.g. Hyprland)
 
 ## Wallpaper structure
@@ -53,7 +53,7 @@ This resolves to:
 ~/Pictures/wallpapers/dynamic-wallpapers/my-wallpaper/
 ```
 
-Any number of frames is supported — the script adapts the interval automatically.
+Any number of frames is supported - the script adapts the interval automatically.
 
 ## Installation
 ```bash
