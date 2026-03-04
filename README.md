@@ -30,10 +30,10 @@ Wallpapers must be placed at:
 └── frame-16.jpg
 ```
 
-The path can be changed by editing the `WALLPAPER_DIR` variable at the top of the script:
+The path can be changed by editing the `WALLPAPERS_DIR` variable at the top of the script:
 
 ```bash
-WALLPAPER_DIR="/your/custom/path"
+WALLPAPERS_DIR="/your/custom/path"
 ```
 
 ## Installation
@@ -41,7 +41,7 @@ WALLPAPER_DIR="/your/custom/path"
 ```bash
 cp dynamic-wallpaper.sh ~/.local/share/bin/dynamic-wallpaper.sh
 chmod +x ~/.local/share/bin/dynamic-wallpaper.sh
-cp wallpaper/* ~/Pictures/wallpaper/dynamic-wallpaper
+cp wallpapers/* ~/Pictures/wallpapers/dynamic-wallpapers
 ```
 
 ## Autostart
